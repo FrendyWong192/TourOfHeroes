@@ -1,0 +1,14 @@
+<div id="SearchBox">
+  <div class="SearchTag">
+    <input #searchBox class="InputBox" (input)="search(searchBox.value)" />
+    <h5 class="SearchText">Search</h5>
+  </div>
+    <div class="SearchResult">
+      <div class="" *ngFor="let hero of heroes$ | async" >
+      <hr>
+        <h5 role="button" class="SearchResultList" routerLink="/detail/{{hero.id}}">
+          {{hero.name}}
+        </h5>   
+      </div>
+    </div>
+</div>

@@ -1,0 +1,159 @@
+@import './src/sass/variables.scss';
+
+.HeroDetails{
+    margin: 5vh 0 0 0;
+    width: 450px;
+    height: 750px;
+    border-radius: 20px;
+    border: solid darken($secondary-bg-color,10%);
+    background-color: lighten($wood,20%);
+    text-align: center;
+
+    .Potrait{
+        border: solid darken($secondary-bg-color, 10%);
+        border-radius: 50px 0 50px 0;
+        margin: 0 10% 0 20%;
+        width: 275px;
+        height: 425px;
+        background-color: $white;
+        .Image{
+            width: 270px;
+            height: 421px;
+            border-radius: 50px 0 50px 0;
+            border: solid $white;
+            border-width: 3px;
+        }
+    }
+
+    .Stats{
+        height: 250px;
+        width: 100%;
+        margin: 20px 0 0 0;
+        color: $white;
+        .Tag{
+            width: 100%;
+            height: 50px;
+            float: left;
+            font-size: 20px;
+            height: 35px;
+            text-align:center;
+
+        }
+        .IdTag{
+            @extend .Tag;
+            width: 30%;
+            margin: -25px 35% 25px 35%;
+            border-radius: 0 0 25px 25px;
+            border: solid $black 3px;
+            background-color: $wood;
+        }
+        .Health{
+            @extend .Tag;
+            border-radius: 15px 0 0 0;
+            border: solid darken($blood, 20%);
+            background-color : $blood;
+            width: 50%;
+        }
+        .Mana{
+            @extend .Tag;
+            border-radius: 0 15px 0 0;
+            border: solid darken($mana, 20%);
+            background-color : $mana;
+            width: 50%;
+        }
+        .Attack{
+            @extend .Tag;
+            width : 70%;
+            height: 50px;
+            font-size: 25px;
+            margin: 0 15% 0 15%;
+            padding: 5px 0 0 0;
+            background: $blood;
+            border: solid darken($blood, 10%);
+            border-radius :  0 0 50px 50px;
+        }
+        .Str{
+            @extend .Tag;
+            width: 33.3%;
+            background-color: $str;
+            height: 75px;
+            border-radius: 0 50px 0 50px;
+            border: solid darken($str, 40%);
+            border-width: 4px;
+            .StrTag{
+                height: 40px;
+            }
+            .StrStat{
+                height: 35px;
+            }
+        }
+        .Int{
+            @extend .Tag;
+            width: 33.3%;
+            background-color: $int;
+            height: 75px;
+            border-radius: 100% 100% 0 0;
+            border-width: 4px;
+            border: solid darken($int, 20%);
+            .IntTag{
+                height: 40px;
+            }
+            .IntStat{
+                height: 35px;
+            }
+        }
+        .Agi{
+            @extend .Tag;
+            width: 33.3%;
+            background-color: $agi;
+            height: 75px;
+            border-radius: 50px 0 50px 0;
+            border-width: 4px;
+            border: solid darken($agi, 40%);
+            .AgiTag{
+                height: 40px;
+            }
+            .AgiStat{
+                height: 35px;
+            }
+        }
+
+    }   
+}
+
+    .Editor{
+        position: fixed;
+        top: 20vh;
+        left: 5vw;
+        z-index: 15;
+        width: 300px;
+        height: 175px;
+        border-radius: 50px;
+        border: solid darken($secondary-bg-color,10%);
+        text-align: center;
+        .InputBox{
+            color: $secondary-bg-color;
+            margin: 0 0 20px 0;
+            padding: 0 0 0 15px;
+            border-radius: 15px;
+            height: 35px;
+            font-size: 20px;
+        }
+    
+        .GoBack{
+            background-color: darken($complementary, 20%);
+            border-radius: 15px;
+            border: solid darken($secondary-bg-color,10%);
+            color: $white;
+            margin: 0 0 0 0px;
+            height: 40px;
+            width: 70px;
+        }
+        .Save{
+            @extend .GoBack;
+            background-color: $creategreen;
+            color: $secondary-bg-color;
+            margin: 0 0 0 10px;
+        }
+    }
+

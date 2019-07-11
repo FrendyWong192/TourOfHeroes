@@ -1,0 +1,18 @@
+<app-hero-search></app-hero-search>
+<div class="Top">
+    <h2 class="dashboard-title"> 4 Top Heroes</h2>
+        <a *ngFor="let hero of heroes"routerLink="/detail/{{hero.id}}">
+            <div class="modulehero">
+                <picture>
+                    <img class="Image" src={{hero.img}} >
+                </picture>
+                <div class="heroid">
+                    <p>{{hero.id}}</p>
+                </div>
+                <div class="heroname">
+                    <p>{{hero.name}}</p>
+                </div>
+            </div>
+        </a>
+</div>
+

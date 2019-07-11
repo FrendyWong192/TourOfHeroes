@@ -1,0 +1,58 @@
+<div *ngIf="hero" class="col-lg-4 col-lg-offset-4">
+  <div class="HeroDetails">
+      <h2>{{hero.name}}</h2>
+      <div class="Potrait">
+        <picture>
+            <source media="(max-width: 767px) " srcset="assets/img/HeroTemplateCard.jpg">
+            <img class="Image" src={{hero.img}} >
+        </picture>
+      </div>
+      <div class="Stats">
+        <div class="IdTag">
+            <span>{{hero.id}} </span>
+        </div>
+        <div class="Health">
+          <span>Health: {{hero.hp}} </span>
+        </div>
+        <div class="Mana">
+            <span>Mana: {{hero.mana}} </span>
+        </div>
+        <div class="Str">
+            <div class="StrTag">
+                <span>Str</span>
+            </div>
+            <div class="StrStat">
+                <span>{{hero.str}}</span>
+            </div>
+        </div>
+        <div class="Int">
+            <div class="IntTag">
+                <span>Int</span>
+            </div>
+            <div class="IntStat">
+                <span>{{hero.int}}</span>
+            </div>
+        </div>
+        <div class="Agi">
+            <div class="AgiTag">
+                <span>Agi</span>
+            </div>
+            <div class="AgiStat">
+                <span>{{hero.agi}}</span>
+            </div>
+        </div>
+        <div class="Attack">
+            <span>Attack: {{hero.atk}} </span>
+        </div>
+    
+</div>
+    <div class="Editor">
+      <h3>Change Name</h3>
+      <div>
+          <input class="InputBox" [(ngModel)]="hero.name" placeholder="name"/>
+      </div>
+      
+      <button class="GoBack" (click)="goBack()">Back</button>
+      <button class="Save" (click)="save()">Save</button>
+    </div>
+</div>

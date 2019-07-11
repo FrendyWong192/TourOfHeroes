@@ -1,0 +1,65 @@
+@import '~src/sass/styles.scss';
+
+  .left-panel{
+    background-color: darken($complementary, 10%);
+    border: solid darken($secondary-bg-color, 10%);
+    position: fixed;
+    top: 50%;
+    left: -5%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    height: 1250px;
+    flex: 1;
+    width: 1250px;
+    opacity: 0.9;
+    border-radius: 50%;
+  }
+  .container{
+    margin : 25px 0 0 430px;
+    color: $font-color;
+    h1{
+    margin-bottom: 0;
+    text-align: center;
+    }
+    h2 {
+      font-size: 2em;
+      margin-top: 0;
+      padding-top: 0;
+    }
+  
+    .home{
+      text-align: center;
+      color: $white;
+      z-index: 2;
+      height: 75px;
+      width: 125px;
+      position: fixed;
+      transform: translate(-50%, -50%);
+      top: 50px;
+      left: 65px;
+      border-radius: 10%;
+      .home-link{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px 0 0 0;
+      }
+    }
+    .heroes{
+      position: fixed;
+      @extend .home;
+      left:360px;
+      .heroes-link{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px 0 0 0;
+      }
+    }
+    .maintitle{
+      position: fixed;
+      @extend.home;
+      width: 250px;
+      height: 200px;
+      top: 60vh;
+      left: 15vw;
+    }
+
+ 
+  }

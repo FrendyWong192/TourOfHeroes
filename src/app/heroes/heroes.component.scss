@@ -1,0 +1,76 @@
+@import './src/sass/variables.scss';
+.HeroesPage{
+  padding: 0 250px 0 30%;
+
+  .AddBox{
+    text-align: center;
+    position: fixed;
+    top: 100;
+    left: 80;
+    z-index: 15;
+    .InputBox{
+      color: $secondary-bg-color;
+      border-radius: 15px;
+      width: 250px;
+      padding: 0 0 0 15px;
+      height: 35px;
+      font-size: 20px;
+    }
+
+    .Add{
+      color: $secondary-bg-color;
+      color: $white;
+      background-color: darken($creategreen,20%);
+      border: solid darken($complementary,10%) 1px;
+      border-radius: 15px;
+      height: 35px;
+      width: 50px;
+      margin: -37px 0 0 -50px;
+    }
+    .Add:hover{
+      background-color: darken($creategreen, 10%);
+    }
+  }
+  
+  .HeroesListBox{
+    width: 450px;
+    height: 75px;
+      .HeroesList{
+        float: left;
+        background-color: lighten($primary-bg-color, 10%);
+        margin: 0 0 0 0;
+        border-radius : 10px;
+        width  :350px;
+        height: 50px;
+      }
+      .HeroesList:hover{
+        transition: cubic-bezier(0, 0 , 1, 1) .4s;
+        box-shadow: inset 350px 0 0 0 $complementary;
+      }
+      .HeroesTag{
+        margin: 7px 0 0 0;
+      }
+      .Badge{
+        background-color: $complementary;
+        width: 30px;
+        height: 50px;
+        margin: -7px 35px 0 1px;
+        padding: 15px 0 0 0;
+        font-size: 20px;
+        border-radius: 10px 0 25px 10px;
+      }
+      .Delete{
+        float: left;
+        border-radius: 10px;
+        width: 50px;
+        height: 50px;
+        border: none;
+        background-color: $complementary;
+        margin: 0 0 0 10px;
+      }
+      .Delete:hover{
+        transform: scale(1.1, 1.1);
+        background-color: darken($complementary, 10%);
+      }
+  }
+}

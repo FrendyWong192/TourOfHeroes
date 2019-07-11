@@ -1,0 +1,49 @@
+@import './src/sass/variables.scss';
+
+/* HeroSearch private styles */
+#SearchBox{
+  position: fixed;
+  left: 230px;
+  top: 150px;
+  transform: translate(-50%, -50%);
+  z-index: 15;
+  width: 250px;
+  height : 75px;
+
+  .SearchTag{
+    width: 300px;
+    height : 50px;
+    .InputBox{
+      float: left;
+      color: $primary-bg-color;
+      border-radius: 25px;
+      width: 250px;
+      height: 40px;
+      font-size: 20px;
+      padding: 0 0 0 15px;
+    }
+    .SearchText{
+      float:left;
+      width: 60px;
+      height: 40px;
+      background-color: $secondary-bg-color;
+      margin: 0 0 0 -59px;
+      padding: 12px 0 0 5px;
+      color: $white;
+      border-radius: 0 25px 25px 0;
+    }
+  }
+  .SearchResult{
+    background-color: darken($complementary, 30%);
+    border-radius: 0 0 35px 35px;
+    margin: -25px 0 0 0;
+    padding: 0 0 0 0;
+    border: solid $white;
+  }
+  .SearchResultList{
+    padding: 5px 0 5px 15px ;
+    margin : 5px 0 5px 0;
+  }
+      
+
+}

@@ -1,0 +1,21 @@
+<div class="HeroesPage">
+  <h1 class="PageTitle">My Heroes</h1>
+  <div class="AddBox">
+
+   <h2>Create New Hero</h2>
+      <input class="InputBox" #heroName />
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button class="Add" (click)="add(heroName.value); heroName.value=''; push()">
+      Hire
+    </button>
+  </div>
+  <div class="HeroesListBox"*ngFor="let hero of heroes">
+    <div class="HeroesList">
+      <h4 role="button" routerLink="/detail/{{hero.id}}" class="HeroesTag">
+        <span class="Badge">{{hero.id}}</span>{{hero.name}}
+      </h4>
+    </div>
+    <button class="Delete" title="delete hero"
+      (click)="delete(hero)">Kill</button>
+  </div>
+</div>

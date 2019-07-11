@@ -1,0 +1,72 @@
+@import './src/sass/variables.scss';
+
+.Top{
+    background-color: $secondary-bg-color;
+    border: solid darken($secondary-bg-color, 10%);
+    color : $font-color;
+    text-align:center;
+    width: 51vw;
+    height: 1150px;
+    margin: 0 0 0 150px;
+    .dashboard-title{
+        text-align: right;
+        padding: 20px 20px 0 0;
+    }
+    .modulehero{
+        float: left;
+        width: 314px;
+        height : 503px;
+        margin: 15px 15px 15px 45px;
+        border-radius: 50px 0 50px 0;
+        border: solid $white 3px;
+        h4{
+            background-color: $secondary-bg-color;
+            opacity: 0.5;
+            margin: 60% 0 0 0 ;
+        }
+
+        .Image{
+            position: absolute;
+            margin: 0 0 0 -155px;
+            width: 310px;
+            height: 500px;
+            border-radius: 50px 0 50px 0;
+            border: solid $white 3px;
+        }
+        
+        .heroname{
+            color: $white;
+            font-size: 20px;
+            position: relative;
+            top: 60%;
+            height: 30px;
+            background-color: $primary-bg-color;
+            border-radius: 5px;
+            opacity: 0.8;
+        }
+        .heroid{
+            color: $white;
+            font-size: 20px;
+            padding: 5px 15px 0 0;
+            position: relative;
+            left: -3;
+            top: -3;
+            background-color: $secondary-bg-color;
+            width: 50px;
+            height: 50px;
+            opacity: 1;
+            border-radius: 0 0 100% 0 ;
+        }
+    }
+    .modulehero:hover{
+        transform: scale(1.1, 1.1);
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+        .heroname{
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+            opacity: 1;
+            height: 40px;
+            font-size: 25px;
+        }
+    }
+
+}
